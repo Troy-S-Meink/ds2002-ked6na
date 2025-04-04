@@ -27,4 +27,4 @@ timer=$3
 aws s3 cp $upload_file $aws_bucket
 
 # Generate the URL
-aws s3 presign --expires-in $timer $aws_bucket$upload_file
+aws s3 presign --expires-in $timer s3://$aws_bucket$upload_file
