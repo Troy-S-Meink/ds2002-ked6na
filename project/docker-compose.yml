@@ -1,0 +1,8 @@
+services:
+  my-container:
+  image: iss-loc
+  container_name: testing
+  volumes:
+    - type: bind
+      source: /workspaces/ds2002-ked6na/project/data
+      target: /data
